@@ -1,0 +1,903 @@
+@charset "UTF-8";
+/* Christal.css */
+
+body{
+  width:100%;
+  height:100vw;
+  position: absolute;
+  top:-3.1vw;
+  background-color:whitesmoke;
+  float:center;
+  -webkit-transform: scale(0.95);
+       -moz-transform: scale(0.95);
+            transform: scale(0.95);
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0vw;
+  margin: 2vw 0vw 2vw 0vw;
+  font-size: 1.30vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav .current{
+  color: black;
+  text-decoration: underline;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 0.93vw 2vw 0.93vw 2vw;
+}
+
+.columnp a:link{
+	text-decoration: underline;
+}
+
+li a:link, .exp2 a:link, .foot a:link,.footp a:link, .footersub a:link,.turnr a:link, .turnl a:link, .prevNext a:link, .columnp a:link{
+  color:darkgray;
+} 
+
+li a:visited, .exp2 a:visited, .foot a:visited,.footp a:visited, .footersub a:visited, .turnr a:visited, .turnl a:visited, .prevNext a:visited, .columnp a:visited{
+  color:#90A3B5;
+} 
+
+li a:hover, .exp2 a:hover, .foot a:hover,.footp a:hover, .footersub a:hover, .turnr a:hover, .turnl a:hover, .prevNext a:hover, .columnp a:hover{
+  color:#545454;
+  text-decoration: underline;
+} 
+
+
+li a:active, .exp2 a:active, .foot a:active,.footp a:active, .footersub a:active, .turnr a:active, .turnl a:active, .prevNext a:active {
+  color: white;
+}
+
+h1{
+ color: black;
+ text-align: center;
+ letter-spacing: 0.2vw;
+ margin-top: 1.0vw;
+ font-size: 2.55vw;
+ font-family:"Montserrat", sans-serif;
+}
+
+.title h2{
+ color: #3E3E3E;
+ text-align: left;
+ letter-spacing: 0.1vw;
+ margin-top: 5.0vw;
+ font-size: 1.5vw;
+ font-family:"Montserrat", sans-serif;
+ text-decoration: underline;
+}
+
+.column h2{
+ color: #3E3E3E;
+ text-align: left;
+ letter-spacing: 0.1vw;
+ margin-top: 0vw;
+ margin-left: -2vw;
+ font-size: 1.5vw;
+ font-family:"Montserrat", sans-serif;
+}
+
+.columnp h2, .columnp1 h2{
+ color: #3E3E3E;
+ text-align: left;
+ letter-spacing: 0.1vw;
+ margin-top: -1.2vw;
+ margin-left: -2vw;
+ font-size: 2.3vw;
+ font-family:"Montserrat", sans-serif;
+}
+
+.titlep h2{
+ color: #3E3E3E;
+ text-align: left;
+ letter-spacing: 0.16vw;
+ margin-top: 5.0vw;
+ margin-left: -2.5vw;
+ font-size: 2.8vw;
+ font-family:"Montserrat", sans-serif;
+  transform: scale(.95, 1);
+}
+
+p{
+ color: black;
+ font-size: 1.25vw;
+ text-align: center;
+ letter-spacing: 0.22vw;
+ margin-left: auto;
+ margin-right: auto;
+ font-family: "Raleway", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*Code copied from: https://codepen.io/denic/pen/GRoOxbM
+  Author: Marko on Codepen
+  Name: CSS Typing Effect
+  Description: Typewriter effect
+  Date retrieved: July 1, 2020
+*/
+
+/*Copied code starts*/
+
+.header-typewrite a {
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  letter-spacing: 0.08vw;
+  font-size: 1.3vw;
+  margin-left: 0.5vw;
+  font-family: "Raleway", sans-serif;/*check*/
+}
+
+.typewrite{
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  display:inline-block;
+  width:21.528vw;
+  height:32.3vw;
+  margin: 4.5vw 1vw 2.76vw 1.8vw;
+}
+
+.containerindex {
+  position: relative;
+  display:inline-block;
+  width:0vw;
+  height:0vw;
+}
+
+.overlayindex {
+  position: absolute;
+  top: 0vw;
+  bottom: 0;
+  left: 0.1vw;
+  right: 0vw;
+  height: 33vw;
+  width: 57.5vw;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#FFFFFF80;
+}
+
+.containerindex:hover .overlayindex {
+  opacity: 1;
+  transform: scale(1.004);
+  transition: .5s ease;
+}
+
+.containerindex:hover img {
+  transform: scale(1.004);
+  transition: .5s ease;
+}
+
+.image {
+  display: block;
+  width:21.528vw;
+  height:32.3vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 0vw;
+  bottom: 0;
+  left: 0vw;
+  right: 0;
+  width:21.528vw;
+  height:32.3vw;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #5D595980;
+}
+
+.container:hover .overlay {
+  opacity:1;
+}
+
+/*Code copied from: https://www.w3schools.com/howto/howto_css_image_overlay.asp
+  Author: w3schools
+  Name: How TO - Image Hover Overlay
+  Description: Create an image hover fade in text
+  Date retrieved: N/A
+*/
+/*Copied code starts*/
+
+.text, .des,.desb{
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family:"Times New Roman", serif;
+  left:10.65vw;
+}
+
+.des {
+  font-size: 0.9vw;
+  position: absolute;
+  top: 18.0vw;
+}
+
+.desb {
+  font-size: 0.9vw;
+  position: absolute;
+  top: 19.0vw;
+}
+
+.intro {
+  color:#404740;
+  padding-top: 1.92vw;
+  font-size: 1.19vw;
+  line-height: 2.5em;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;/*check*/
+}
+
+.im1{
+ width: 35.417vw;
+ height:auto;
+ padding:4.2vw 0vw 3.2vw;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.left{
+ position: absolute;
+ top: 11.75vw;
+ left:5.9vw; 
+ font-size:2.25vw;  
+ margin-left: 1.85vw;
+}
+
+.preview{
+ position: absolute;
+ top: 12.7vw;
+ left:5.3vw; 
+ font-size: 1.2vw;
+ margin-left:5.85vw;
+ font-family:"Raleway", sans-serif;
+}
+
+.right{
+ position: absolute;
+ top: 11.75vw;
+ left:5.9vw; 
+ font-size:2.25vw;  
+ margin-left: 84.85vw;
+}
+
+.next{
+ position: absolute;
+ top: 12.65vw;
+ left:81.3vw; 
+ font-size: 1.2vw;
+ margin-left:5.85vw;
+ font-family:"Raleway", sans-serif;
+}
+
+.Row2 {
+  padding-bottom:2.85vw;
+}
+
+.homeimg{ 
+  width:95.1314vw;
+  height: 36vw;
+  margin-top: 0vw;
+  padding: 2.8vw 2.036vw 5.000vw;
+}
+
+.imgp{
+  position: relative;
+  top: -33vw;
+  left: 2.5vw;
+  margin-left: 0vw;
+  margin-bottom: -26vw;
+  width:19%;
+  height: auto;
+}
+
+.imgp1{
+  width:95vw;
+  height: 30vw;
+  padding: 0vw 0vw 0vw;
+  margin: -2vw 2.036vw 3.5vw; 
+  border-radius: 2vw;
+}
+
+.imgp2{
+  margin-top: -15vw;
+  margin-left: 35vw;
+  position: relative;
+  top: -95.3vw;
+  left:-33vw;
+  width:21.5%;
+  height:auto;
+}
+
+.imgp3{
+  margin-left: 35vw;
+  position: relative;
+  top: -94.8vw;
+  left:-33vw;
+  width:21.5%;
+  height:auto;
+}
+
+.homeimgp{ 
+  width:57.4vw;
+  height: 19.3vw;
+  padding: 0vw 0vw 0vw;
+  border-radius: 1.5vw;
+  position: relative;
+  top: 8vw;
+  left: 0.1vw;
+}
+
+.homeimgpro{ 
+  width:95vw;
+  height: 31vw;
+  padding: 0vw 0vw 0vw;
+  margin: 1.8vw 2.036vw 3.5vw 4.5vw;
+  border-radius: 3vw;
+  position: relative;
+  top: 0vw;
+  left: -2.5vw;
+}
+
+.fu{
+	margin-left: 32.5vw;
+	margin-top: -7.6vw;
+}
+
+
+.skills{
+	margin-left: -62vw;
+	margin-top: -1vw;
+}
+
+
+.title,.titlep{
+	margin-left: 2.00vw;
+	margin-top: -5.7vw;
+}
+
+.title p {
+	letter-spacing: 0.1vw;
+	text-align: left;
+	margin-top: -0.5vw;
+	margin-bottom: 5vw;
+}
+
+.column p {
+	letter-spacing: 0.1vw;
+	text-align: left;
+	margin-top: -1.0vw;
+	margin-bottom: 5vw;
+	 margin-left: -2vw;
+}
+
+.columnp p, .columnp1 p {
+	letter-spacing: 0.1vw;
+	text-align: left;
+	margin-top: -1.0vw;
+	margin-bottom: 5vw;
+	margin-left: -17.6vw;
+	font-size: 1.7vw;
+}
+
+.titlep p{
+	letter-spacing: 0.1vw;
+	text-align: left;
+	margin-top: -1.5vw;
+	margin-bottom: 5vw;
+	font-size: 1.5vw;
+}
+
+/*Code copied from: https://alvarotrigo.com/blog/how-to-make-a-progress-bar-in-css/
+  Author: Warren Davies
+  Name: How to make a progress bar in CSS 
+  Description: Tutorial on how to create an animated progress bar
+  Date retrieved:June 03, 2021 
+*/
+/*Copied code starts*/
+
+/*pgb1*/
+
+.progress {
+  width: 15%;
+  margin: 4.450vw 0vw 0.68vw 11.255vw;
+  background-color:#80808015;
+  height: 1.480vw;
+}
+
+/*pgb1*/
+.progress .progressbar1 {
+  animation: progressbar1 3.5s normal forwards ease-in-out;
+}
+
+@keyframes progressbar1 {
+  from {width: 0%;}
+  to {width: 65%;}
+}
+/*Copied code end*/
+
+.progress .progressbar1 , .progress .progressbar2, .progress .progressbar3, .progress .progressbar4, .progress .progressbar5, .progress .progressbar6, .progress .progressbar7, .progress .progressbar8{
+  height: 100%;
+  width: 0%;
+  background-color: #87878790;
+}
+
+.pbody{
+ margin-top: 0vw;
+}
+
+/*pgb2*/
+.progress .progressbar2 {
+  animation: progressbar2 4s normal forwards ease-in-out;
+}
+
+@keyframes progressbar2 {
+  from {width: 0%;}
+  to {width: 90%;}
+}
+
+/*pgb3*/
+.progress .progressbar3 {
+  animation: progressbar3 4.5s normal forwards ease-in-out;
+}
+
+@keyframes progressbar3 {
+  from {width: 0%;}
+  to {width: 92%;}
+}
+
+/*pgb4*/
+.progress .progressbar4 {
+  animation: progressbar4 5s normal forwards ease-in-out;
+}
+
+@keyframes progressbar4 {
+  from {width: 0%;}
+  to {width: 75%;}
+}
+
+/*pgb5*/
+.progress .progressbar5 {
+  animation: progressbar5 5.5s normal forwards ease-in-out;
+}
+
+@keyframes progressbar5 {
+  from {width: 0%;}
+  to {width: 88%;}
+}
+
+/*pgb6*/
+.progress .progressbar6 {
+  animation: progressbar6 6s normal forwards ease-in-out;
+}
+
+@keyframes progressbar6 {
+  from {width: 0%;}
+  to {width: 80%;}
+}
+
+/*pgb6*/
+.progress .progressbar7 {
+  animation: progressbar7 6.5s normal forwards ease-in-out;
+}
+
+@keyframes progressbar7 {
+  from {width: 0%;}
+  to {width: 85%;}
+}
+
+/*pgb6*/
+.progress .progressbar8 {
+  animation: progressbar8 7.0s normal forwards ease-in-out;
+}
+
+@keyframes progressbar8 {
+  from {width: 0%;}
+  to {width: 60%;}
+}
+
+.percentage, .tag{
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+.percentage{
+  margin: 0vw; 
+  position:relative; 
+  top:-2.3vw; 
+  left:0vw; 
+  padding-left: 17.5vw;
+  line-height: 2.75em;
+  font-size: 1.00vw;
+}
+
+.tag{
+  margin: -2.225vw 90.5vw -1vw 0vw;
+  text-align: right;
+  font-size: 1.25vw;
+}
+
+.bubbles, .bubblesp, .bubblesshort, .bubblesfour,.bubblesfive{
+ width:100vw;
+ position:absolute;
+ z-index:-1;
+ overflow:hidden;
+ top:0vw;
+ left:0vw;
+}
+
+/*Home Page bubbles*/
+.bubbles{
+  height:120vw;
+}
+
+/*Portfolio bubbles*/
+.bubblesp{
+  height:106.5vw;
+}
+
+/*Bubbles for portfolio "Glance"*/
+.bubblesshort{
+  height:270vw;
+}
+
+/*Bubbles for portfolio with 4 images*/
+.bubblesfour{
+  height:280vw;
+}
+
+/*Bubbles for portfolio with 5 images*/
+.bubblesfive{
+  height:340vw;
+}
+
+/*Code copied from: https://codepen.io/Momika/pen/ydaWmQ
+  Author: Momika Shrestha on CodePen
+  Name: Pure CSS animated bubble background
+  Description: Displays animated circles/bubbles
+  Date retrieved:June 19, 2019
+*/
+/*Copied code starts*/
+
+.bubble{
+  position: absolute;
+  bottom:-10vw;
+  width:2.778vw;
+  height:2.778vw;
+  background: #89898930;
+  border-radius:50%;
+  opacity:0.5;
+  animation: rise 3s infinite ease-in;
+}
+
+.bubble:nth-child(1){
+  width:10.417vw;
+  height:10.417vw;
+  left:10%;
+  animation-duration:8s;
+}
+.bubble:nth-child(2){
+  width:5.556vw;
+  height:5.556vw;
+  left:20%;
+  animation-duration:9s;
+  animation-delay:1s;
+}
+.bubble:nth-child(3){
+  width:3.472vw;
+  height:3.472vw;
+  left:35%;
+  animation-duration:7s;
+  animation-delay:2s;
+}
+.bubble:nth-child(4){
+  width:9.028vw;
+  height:9.028vw;
+  left:50%;
+  animation-duration:8s;
+  animation-delay:4s;
+}
+.bubble:nth-child(5){
+  width:6.597vw;
+  height:6.597vw;
+  left:55%;
+  animation-duration:9s;
+  animation-delay:1s;
+}
+.bubble:nth-child(6){
+  width:3.125vw;
+  height:3.125vw;
+  left:65%;
+  animation-duration:8s;
+  animation-delay:3s;
+}
+.bubble:nth-child(7){
+  width:4.861vw;
+  height:4.861vw;
+  left:70%;
+  animation-duration:10s;
+  animation-delay:2s;
+}
+.bubble:nth-child(8){
+  width:9.375vw;
+  height:9.375vw;
+  left:80%;
+  animation-duration:8s;
+  animation-delay:2s;
+}
+.bubble:nth-child(9){
+  width:1.736vw;
+  height:1.736vw;
+  left:70%;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(10){
+  width:4.514vw;
+  height:4.514vw;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(11){
+  width:5.903vw;
+  height:5.903vw;
+  animation-duration:7s;
+}
+
+@keyframes rise{
+	
+from {top: 0vw;}
+  to {top: 450vw;}
+}
+
+.containerp {
+  position: relative;
+  display:inline-block;
+  width:0vw;
+  height:0vw;
+}
+
+.overlayp {
+  position: absolute;
+  top: 1.8vw;
+  bottom: 0;
+  left: 2vw;
+  right: 0vw;
+  height: 31vw;
+  width: 95vw;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#FFFFFF50;
+  border-radius: 3vw;
+}
+
+.containerp:hover .overlayp {
+  opacity: 1;
+  transform: scale(1.004);
+  transition: .5s ease;
+}
+
+.containerp:hover img {
+  transform: scale(1.004);
+  transition: .5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 1.73vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  display: block;
+  width:95vw;
+  margin-top: -1.5vw;
+  margin-left: 2vw;;
+  border-color: gray;
+}
+
+* {
+  box-sizing: 95vw;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column{
+  float: left;
+  position: relative;
+  right: -2vw;
+  width: 27.5%;
+  padding: 2.5vw;
+  margin-top:-1vw; 
+}
+
+.columnp, .columnp1{
+  float: left;
+  position: relative;
+  right: -2vw;
+  width: 43%;
+  padding: 2.5vw 2.5vw 0vw 2.5vw;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+.foot ,.footersub, .footp {
+ color: black;
+ font-size: 1.0vw;
+ padding-bottom: 1.5vw;
+ letter-spacing: 0.15vw;
+ line-height: 2vw;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ font-family: "Raleway", sans-serif;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 58vw;
+  height: 50vh;
+  position: relative;
+  top: -35vw;
+  left: 40vw;
+}
+
+/* Next & previous buttons */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  width: 3vw;
+  margin-top: 19.15vw;
+  color: black;
+  font-weight: bold;
+  font-size: 23px;
+  transition: 0.3s ease;
+  border-radius: 0 1vw 1vw 0;
+  user-select: none;
+}
+
+.nexti {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 3vw;
+  margin-top: 19.15vw;
+  margin-right: 3vw;
+  color: black;
+  font-weight: bold;
+  font-size: 23px;
+  transition: 0.3s ease;
+  border-radius: 0 1vw 1vw 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nexti {
+  left: 50vw;
+  border-radius: 0.1vw 0 0 0.1vw;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .nexti:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.9vw;
+  width: 0.9vw;
+  position: relative;
+  margin-right: 1vw;
+  top:-30vw;
+  right: -18vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: -45vw;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.ab{
+  width: 57.6vw;
+  height: 36.6vw;
+  margin-bottom: -20vw;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .nexti {font-size: 11px}
+}
+
+.footp{
+ margin-top: -3vw;
+}
+
+.foot{
+ margin-top: 0vw;
+}
+
+
+/* Christal.css */
