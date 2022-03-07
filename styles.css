@@ -157,8 +157,6 @@ a{
 .containerindex {
   position: relative;
   display:inline-block;
-  width:0vw;
-  height:0vw;
 }
 
 .overlayindex {
@@ -298,7 +296,7 @@ a{
   width:95.1314vw;
   height: 36vw;
   margin-top: 0vw;
-  padding: 2.8vw 2.036vw 5.000vw;
+  padding: 2.8vw 2.036vw 9.000vw;
 }
 
 .imgp{
@@ -537,7 +535,7 @@ a{
   font-size: 1.25vw;
 }
 
-.bubbles, .bubblesp, .bubblesshort, .bubblesfour,.bubblesfive{
+.bubbles, .bubblesp, .bubblesshort, .bubblesfour,.bubblesfive, .bubblesi{
  width:100vw;
  position:absolute;
  z-index:-1;
@@ -554,6 +552,10 @@ a{
 /*Portfolio bubbles*/
 .bubblesp{
   height:106.5vw;
+}
+
+.bubblesi{
+ height:138vw;
 }
 
 /*Bubbles for portfolio "Glance"*/
@@ -689,6 +691,7 @@ from {top: 0vw;}
   transition: .5s ease;
   background-color:#FFFFFF50;
   border-radius: 3vw;
+  margin-bottom: 30vw;
 }
 
 .containerp:hover .overlayp {
@@ -722,11 +725,6 @@ hr {
   border-color: gray;
 }
 
-* {
-  box-sizing: 95vw;
-}
-
-
 /* Create three equal columns that floats next to each other */
 .column{
   float: left;
@@ -751,27 +749,10 @@ hr {
   display: table;
   clear: both;
 }
-/* YOU'RE THE DESIGNER! 
-   ____________________
-   All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
 
-.CSSgal{
-	color: #fff;	
-	text-align: center;
-}
-
-.CSSgal a {
-	border-radius: 50%;
-	margin: 0 3px;
-	color: rgba(0,0,0,0.8);
-	text-decoration: none;
-}
-
-.foot ,.footersub, .footp {
+.foot ,.footersub, .footp, .footi{
  color: black;
  font-size: 1.0vw;
- padding-bottom: 1.5vw;
  letter-spacing: 0.15vw;
  line-height: 2vw;
  margin-left: auto;
@@ -787,42 +768,57 @@ hr {
   position: relative;
   top: -35vw;
   left: 40vw;
+  padding-bottom: 0vw;
+  margin-bottom: 0vw;
 }
 
 /* Next & previous buttons */
 .prev{
+	
+	/*cursor: pointer;
+  width: 0.9vw;
+  height: 0.9vw;
+  background-color: red;
+  margin-right: 1.2vw;
+  position: relative;
+  bottom: 52vh;
+  left: 63vw;
+    display: inline-block;
+  transition: background-color 0.15s ease;*/
+	
   cursor: pointer;
-  position: absolute;
+  position: relative;
   left: 6vw;
-  top: 50%;
+  top: -4vw;
   width: 3vw;
   margin-top: 19.15vw;
+  margin-bottom: 0vw;
   color: black;
   font-weight: bold;
-  font-size: 23px;
-  transition: 0.3s ease;
+  font-size: 2.5vw;
+  transition: 0.1s ease;
   border-radius: 0 1vw 1vw 0;
-  user-select: none;
 }
 
 .nexti {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: 3vw;
+  position: relative;
+  top: -4vw;
+   left: 46vw;
+  width: 2.5vw;
   margin-top: 19.15vw;
+  margin-bottom: 0vw;
   margin-right: 3vw;
   color: black;
   font-weight: bold;
-  font-size: 23px;
-  transition: 0.3s ease;
+  font-size: 2.5vw;
+  transition: 0.1s ease;
   border-radius: 0 1vw 1vw 0;
-  user-select: none;
+   clear: both;
 }
 
 /* Position the "next button" to the right */
 .nexti {
-  left: 50vw;
   border-radius: 0.1vw 0 0 0.1vw;
 }
 
@@ -841,21 +837,18 @@ hr {
   position: absolute;
   top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 0.9vw;
+cursor: pointer;
   width: 0.9vw;
+  height: 0.9vw;
+  background-color: red;
+  margin-right: 1.2vw;
   position: relative;
-  margin-right: 1vw;
-  top:-30vw;
-  right: -18vw;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  margin-top: -45vw;
+  bottom: 52vh;
+  left: 63vw;
+    display: inline-block;
+  transition: background-color 0.15s ease;
 }
 
 .active, .dot:hover {
@@ -865,16 +858,19 @@ hr {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 .ab{
   width: 57.6vw;
   height: 36.6vw;
-  margin-bottom: -20vw;
+  margin-top: 0vw;
+  padding-bottom: 0vw;
 }
+
+.mySlides {display: none}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -886,11 +882,6 @@ hr {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .nexti {font-size: 11px}
-}
-
 .footp{
  margin-top: -3vw;
 }
@@ -899,5 +890,9 @@ hr {
  margin-top: 0vw;
 }
 
+.footi{
+ display: block;
+ margin-top: -20vw;
+}
 
 /* Christal.css */
