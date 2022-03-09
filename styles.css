@@ -3,11 +3,12 @@
 
 body{
   width:100%;
-  height:100vw;
+  height:100%;
   position: absolute;
   top:-3.1vw;
   background-color:whitesmoke;
   float:center;
+  margin-top: 2vw;
   -webkit-transform: scale(0.95);
        -moz-transform: scale(0.95);
             transform: scale(0.95);
@@ -535,7 +536,7 @@ a{
   font-size: 1.25vw;
 }
 
-.bubbles, .bubblesp, .bubblesshort, .bubblesfour,.bubblesfive, .bubblesi{
+.bubbles, .bubblesp, .bubblesshort, .bubblesfour,.bubblesfive, .bubblesi, .bubblesa{
  width:100vw;
  position:absolute;
  z-index:-1;
@@ -555,7 +556,11 @@ a{
 }
 
 .bubblesi{
- height:138vw;
+ height:128vw;
+}
+
+.bubblesa{
+ height:70vw;
 }
 
 /*Bubbles for portfolio "Glance"*/
@@ -763,13 +768,13 @@ hr {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 58vw;
-  height: 50vh;
+  display: inline-block;
+  width: 0vw;
+  height: 0vh;
   position: relative;
   top: -35vw;
   left: 40vw;
-  padding-bottom: 0vw;
-  margin-bottom: 0vw;
+
 }
 
 /* Next & previous buttons */
@@ -839,17 +844,17 @@ hr {
 }
 /* The dots/bullets/indicators */
 .dot {
-cursor: pointer;
+  display: inline;
   width: 0.9vw;
   height: 0.9vw;
-  background-color: red;
+  margin-top: -20vw;
+  background-color: grey;
   margin-right: 1.2vw;
-  position: relative;
-  bottom: 52vh;
-  left: 63vw;
-    display: inline-block;
   transition: background-color 0.15s ease;
 }
+
+.bullet ul{}
+
 
 .active, .dot:hover {
   background-color: #717171;
@@ -870,6 +875,37 @@ cursor: pointer;
   padding-bottom: 0vw;
 }
 
+.about p{
+  width: 50%;
+ margin-top: 3vw;
+  text-align: center;
+  position: relative;
+  font-size: 1.2vw;
+}
+
+.btn{
+  background-color: #0F0F0F80;
+  position: absolute;
+  left:50%;
+  margin-top: 2vw;
+  margin-left: -7.5vw;
+  border-color: transparent;
+  font-size: 1vw;
+  width: 15vw;
+  height: 3vw;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn a{
+  color: white;
+}
+
+.btn:hover{
+background-color:#41404050;
+}
+
+
 .mySlides {display: none}
 
 @-webkit-keyframes fade {
@@ -882,17 +918,30 @@ cursor: pointer;
   to {opacity: 1}
 }
 
+
+
 .footp{
  margin-top: -3vw;
 }
 
 .foot{
- margin-top: 0vw;
+   display: block;
+ margin-top: 15vw;
+ margin-bottom: 3vw;
 }
 
 .footi{
- display: block;
- margin-top: -20vw;
+  margin-top: -10vw;
 }
+.wuyu{
+  width: 20vw;
+  height: auto;
+  position: relative;
+  margin-left: -10vw;
+  margin-top: 2vw;
+  left: 50%;
+}
+
+
 
 /* Christal.css */
