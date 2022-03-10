@@ -992,7 +992,7 @@ background-color:#41404050;
 }
 
 .bullet{
-		margin-left: 65vw;
+	margin-left: 65vw;
 	position: relative;
 	top: -57vw;
 
@@ -1000,6 +1000,15 @@ background-color:#41404050;
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.fu a{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25vw;
+   letter-spacing: 0.22vw;
+  margin-left: 27.2vw;
+  text-decoration: underline;
+  color: gray;
 }
 
 
